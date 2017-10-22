@@ -3,25 +3,41 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-
-
-     >
+    android:layout_gravity="center_horizontal">
 
 
     <!--Title-->
     <TextView
+        android:layout_gravity="center_horizontal"
         android:layout_margin="@dimen/margin"
         android:text="@string/name"
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:textSize="@dimen/h1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
 
         />
 
     <!--Image-->
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/icon2"
+        android:layout_height="@dimen/icon2"
+        android:src="@drawable/man"
+        />
 
     <!--Back Button  -->
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/icon2"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+
+        />
+
+
 </LinearLayout>
