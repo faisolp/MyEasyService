@@ -22,7 +22,7 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         //button control
-        btnGotSecend_Control();
+        btnGotSecond_Control();
 
 
         // Main Method
@@ -30,11 +30,11 @@ public class MainFragment extends Fragment {
 
     }
 
-    private void btnGotSecend_Control() {
+    private void btnGotSecond_Control() {
 
 //      //init control
-        Button btnGotSecend = getView().findViewById(R.id.btnGotSecend);
-        btnGotSecend.setOnClickListener(
+        Button btnGotSecond = getView().findViewById(R.id.btnGotSecond);
+        btnGotSecond.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

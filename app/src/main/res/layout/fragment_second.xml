@@ -30,6 +30,7 @@
 
     <!--Back Button  -->
     <Button
+        android:id="@+id/btnBack"
         android:layout_gravity="center_horizontal"
         android:layout_width="@dimen/icon2"
         android:layout_height="wrap_content"

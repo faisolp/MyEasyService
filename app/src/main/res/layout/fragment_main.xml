@@ -40,9 +40,9 @@
         android:layout_height="@dimen/icon"
         android:layout_marginLeft="@dimen/margin"
         android:background="@color/colorPrimary" />
-    <!--Button Go to Secend -->
+    <!--Button Go to Second -->
     <Button
-        android:id="@+id/btnGotSecend"
+        android:id="@+id/btnGotSecond"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/icon"
         android:layout_gravity="center_horizontal"
