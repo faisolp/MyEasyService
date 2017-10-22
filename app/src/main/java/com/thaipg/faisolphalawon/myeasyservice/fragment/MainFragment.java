@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.thaipg.faisolphalawon.myeasyservice.R;
 
@@ -14,13 +15,52 @@ import com.thaipg.faisolphalawon.myeasyservice.R;
  */
 
 public class MainFragment extends Fragment {
+    //Main Method
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        //button control
+        btnGotSecend_Control();
+
+
+        // Main Method
+
+
+    }
+
+    private void btnGotSecend_Control() {
+
+//      //init control
+        Button btnGotSecend = getView().findViewById(R.id.btnGotSecend);
+        btnGotSecend.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //Go to second fragment
+                        getActivity().getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.contentFragmentMain,new SecondFragment())
+                                .addToBackStack(null) //ไม่ถอดหน้ากากเก่าออก
+                                .commit();
+                    }
+                }
+        );
+    }
+
+
     //หน้ากาก
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view=inflater.inflate(R.layout.fragment_main,container,false);   // XML --> Java
+        View view=inflater.inflate(
+                R.layout.fragment_main
+                ,container
+                ,false
+        );   // XML --> Java
         return  view;
 
 

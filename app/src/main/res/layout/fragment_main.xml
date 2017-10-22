@@ -40,6 +40,17 @@
         android:layout_height="@dimen/icon"
         android:layout_marginLeft="@dimen/margin"
         android:background="@color/colorPrimary" />
+    <!--Button Go to Secend -->
+    <Button
+        android:id="@+id/btnGotSecend"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/icon"
+        android:layout_gravity="center_horizontal"
+        android:text="Goto Second"
+        android:textColor="@color/colorBtnFont"
+        android:background="@color/colorPrimary"
+
+        />
 
 
 </LinearLayout>
