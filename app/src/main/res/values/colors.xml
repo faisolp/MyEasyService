@@ -5,4 +5,5 @@
     <color name="colorPrimaryDark">#00766c</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorBtnFont">#ffffff</color>
+    <color name="colorManu">#ffffff</color>
 </resources>
