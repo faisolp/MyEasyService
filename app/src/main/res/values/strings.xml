@@ -5,4 +5,6 @@
     <string name="mnu1">Main fragment</string>
     <string name="mnu2">Second fragment</string>
     <string name="mnuExit">Exit</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
 </resources>
